@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(129.18% 129.18% at 52.48% -24.05%, #E7E5EB 0%, #554797 100%);
+}
+
+.wrapper .images {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper .images .globe {
+  position: absolute;
+}
+
+.wrapper .images .g1 {
+  width: 25%;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  position: fixed;
+}
+
+.wrapper .images .g2 {
+  width: 20%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -99;
+}
+
+.wrapper .images .g3 {
+  width: 20%;
+  right: 0;
+  bottom: 0;
+  z-index: -99;
+}
+
+.wrapper .images .lg-wrap {
+  width: 100%;
+  text-align: right;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+.wrapper .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.wrapper .content h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 61px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.wrapper .content h2 span:nth-child(1) {
+  color: #F841A6;
+}
+
+.wrapper .content h2 span:nth-child(2) {
+  color: #fff;
+}
+
+.wrapper .content .window {
+  width: 65%;
+  height: 70%;
+  background: #151771bb;
+  border: 5px solid #F841A6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: auto;
+}
+
+.wrapper .content .window h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 37px;
+  text-align: center;
+  color: #F841A6;
+}
+
+.wrapper .content .window h1 #finish {
+  color: #59DEFF !important;
+  cursor: pointer;
+}
+
+.wrapper .content .window .board {
+  margin-top: 50px;
+  width: 240px;
+  height: 240px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.wrapper .content .window .board td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  border-radius: 4px !important;
+  font-size: 40px;
+  line-height: 37px;
+  font-weight: 900;
+  color: #151771bb;
+}
+
+.wrapper .content .window .board .grey {
+  background-color: #DFE0FE;
+}
+
+@media (max-width: 760px) {
+  h2 {
+    font-size: 50px !important;
+  }
+  h1 {
+    font-size: 20px !important;
+  }
+  .board {
+    width: 70% !important;
+    height: 50% !important;
+  }
+  .board table {
+    width: 100% !important;
+    height: 100%;
+  }
+  .board td {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
